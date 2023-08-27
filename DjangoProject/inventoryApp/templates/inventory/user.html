@@ -1,0 +1,56 @@
+{% extends 'inventory/base.html' %}  <!-- Extends the base.html template -->
+
+{% block title %}{{ profile }} {% endblock %}  <!-- Sets the title of the page to the value of the 'profile' variable -->
+
+{% block content %}  <!-- Defines the content block -->
+
+<div class="container my-4">  <!-- Creates a container with top margin of 4 -->
+    <div class="row align-items-start">  <!-- Creates a row with items aligned at the start -->
+        <div class="col-md-8">  <!-- Creates a column with medium width of 8 -->
+            <div class="card">  <!-- Creates a card -->
+                <div class="card-header">  <!-- Card header -->
+                    <h1 class="text-center">{{ user.username }}'s Profile</h1>  <!-- Displays the username followed by 'Profile' -->
+                </div>
+                <div class="card-body">  <!-- Card body -->
+                    <div class="row">  <!-- Creates a row -->
+                        <div class="col-md-8">  <!-- Creates a column with medium width of 8 -->
+                            <div class="card text-center p-3">  <!-- Creates a card with padding of 3 -->
+                                <h4>Profile Information</h4>  <!-- Heading for profile information -->
+                                <br>  <!-- Line break -->
+                                <table class="table bg-white table-borderless">  <!-- Creates a table with white background and no borders -->
+                                    <tbody>  <!-- Table body -->
+                                        <tr>  <!-- Table row -->
+                                            <th scope="col">User Name</th>  <!-- Table header for 'User Name' -->
+                                            <td scope="col">{{ user.username }}</td>  <!-- Table data for the username -->
+                                        </tr>
+                                        <tr>  <!-- Table row -->
+                                            <th scope="col">Full Name</th>  <!-- Table header for 'Full Name' -->
+                                            <td scope="col">{{ user.first_name }} {{user.last_name}}</td>  <!-- Table data for the full name -->
+                                        </tr>
+                                        <tr>  <!-- Table row -->
+                                            <th scope="row">Email</th>  <!-- Table header for 'Email' -->
+                                            <td>{{ user.email }}</td>  <!-- Table data for the email -->
+                                        </tr>
+                                        <tr>  <!-- Table row -->
+                                            <th scope="row">Phone</th>  <!-- Table header for 'Phone' -->
+                                            <td>{{ user.userprofile.mobile }}</td>  <!-- Table data for the phone number -->
+                                        </tr>
+                                        <tr>  <!-- Table row -->
+                                            <th scope="row">Address</th>  <!-- Table header for 'Address' -->
+                                            <td>{{ user.userprofile.physical_address }}</td>  <!-- Table data for the address -->
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-4">  <!-- Creates a column with medium width of 4 -->
+                            <img style="border-radius: 50%; width: auto; height: auto;" class="img-thumbnail" src="{{ user.userprofile.picture.url }}" alt="profile picture">  <!-- Displays the profile picture with rounded corners -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}  <!-- Ends the content block -->

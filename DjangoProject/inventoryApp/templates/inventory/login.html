@@ -1,0 +1,22 @@
+{% extends 'inventory/base.html' %}  <!-- Extends the 'inventory/base.html' template -->
+
+{% block title %}{{ register }} {% endblock %}  <!-- Defines a block called 'title' that contains the value of the 'register' variable -->
+
+{% load crispy_forms_tags %}  <!-- Loads the crispy_forms_tags -->
+
+{% block content %}  <!-- Defines a block called 'content' -->
+<div class="container">
+    <div class="row mt-5 justify-content-center">  <!-- Centers the row horizontally -->
+        <div class="col-md-3">
+            <h4>Login</h4>
+            <hr>
+            <form method="POST">
+                {% csrf_token %}  <!-- Adds a CSRF token to the form for security -->
+                {{ form|crispy }}  <!-- Renders the form using the crispy_forms_tags -->
+                <br>
+                <input class="btn btn-info" type="submit" value="Login">  <!-- Adds a login button -->
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
