@@ -1,4 +1,3 @@
-```markdown
 # Inventory Management System
 
 This is an Inventory Management System built using Python Django. It allows users to manage their inventory, create products, place orders, and update their profile information. The system also provides an admin interface to manage orders and products.
@@ -86,4 +85,3 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-```
