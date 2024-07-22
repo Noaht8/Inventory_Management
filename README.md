@@ -48,11 +48,11 @@ Follow these steps to set up the project:
 
 ## Functional Requirements
 
-1. User Registration: The code allows users to register an account by providing necessary information such as username, password, and any additional fields defined in the UserRegistry form.
+1. User Registration: Allows users to register an account by providing necessary information such as username, password, and any additional fields defined in the UserRegistry form.
 
-2. User Login: The code allows registered users to log in to their accounts using their credentials.
+2. User Login: Allows registered users to log in to their accounts using their credentials.
 
-3. User Logout: The code provides a mechanism for users to log out of their accounts.
+3. User Logout: Provides a mechanism for users to log out of their accounts.
 
 4. Product Listing: The "products" view displays a list of all products in the system.
 
