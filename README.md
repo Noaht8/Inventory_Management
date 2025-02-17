@@ -7,6 +7,7 @@ This is an Inventory Management System built using Python Django. It allows user
 Follow these steps to set up the project:
 
 1. Create a virtual environment:
+
    ```
    python -m venv myvenv
    ```
@@ -14,16 +15,19 @@ Follow these steps to set up the project:
 2. Activate the virtual environment:
 
    On Windows:
+
    ```
    $ env\Scripts\activate
    ```
 
    On Linux/Mac:
+
    ```
    $ source /env/bin/activate
    ```
 
 3. Install necessary libraries:
+
    ```
    pip install django
    pip install django-crispy-forms
@@ -32,11 +36,13 @@ Follow these steps to set up the project:
    ```
 
 4. Create the Django project:
+
    ```
    django-admin startproject DjangoProject
    ```
 
 5. Change directory to DjangoProject:
+
    ```
    cd DjangoProject
    ```
@@ -85,3 +91,7 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## Note
+
+Ongoing project
